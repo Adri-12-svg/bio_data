@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6a8d0eda0a.js" crossorigin="anonymous"></script>
+    <title>Feedback</title>
+</head>
+<body>
+    <form action="/action.php">
+        <i class="fa-solid fa-comments"></i>
+        <H1>Feedback Form</H1>
+        <FORM action="mailto:simon.long@cit.ie" method="post" enctype="text/plain">
+          First Name : <INPUT type="text" name="firstname" placeholder="Enter name here">
+          Surname : <INPUT type="text" name="secondname"  placeholder="Enter surname here">
+          <BR>
+          <BR>
+          <!--It's important that both of these radio button have the same name so they behave as one component (i.e. Only one can be selected at a time)-->  
+          <INPUT type="radio" name="gender" value="male">Male<BR>
+          <INPUT type="radio" name="gender" value="female">Female  
+          <BR>
+          <BR>
+          <!--This uses the new HTML "email" INPUT type which will automatically validates the email address when the SUBMIT button is clicked-->
+          Email: <INPUT type="email" name="mail" placeholder="e-mail address">
+          <BR>
+          <BR>
+          Comment :<BR>        
+          <TEXTAREA rows="6" cols="50" name="commentfield"></TEXTAREA>
+          <BR>
+            <INPUT TYPE="submit" value="Send Feedback">
+                <INPUT TYPE="reset" value="Reset">
+    </FORM>
+    
+</body> 
+</html>
